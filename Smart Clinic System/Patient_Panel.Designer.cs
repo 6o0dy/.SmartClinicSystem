@@ -1,0 +1,473 @@
+﻿namespace Smart_Clinic_System
+{
+    partial class Patient_Panel
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up resources.
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient_Panel));
+            pnlPatientInfo = new Panel();
+            lblPatientTitle = new Label();
+            lblName = new Label();
+            txtName = new TextBox();
+            lblNationalID = new Label();
+            txtNationalID = new TextBox();
+            lblDOB = new Label();
+            txtDOB = new TextBox();
+            lblAge = new Label();
+            txtAge = new TextBox();
+            lblGender = new Label();
+            txtGender = new TextBox();
+            lblGovernorate = new Label();
+            txtGovernorate = new TextBox();
+            lblPhone = new Label();
+            txtPhone = new TextBox();
+            grpVisits = new GroupBox();
+            dgvVisits = new DataGridView();
+            colVisitDate = new DataGridViewTextBoxColumn();
+            colDoctor = new DataGridViewTextBoxColumn();
+            colSpecialty = new DataGridViewTextBoxColumn();
+            colShortDiagnosis = new DataGridViewTextBoxColumn();
+            grpVisitDetails = new GroupBox();
+            lblDetailDiagnosis = new Label();
+            txtDetailDiagnosis = new TextBox();
+            lblDetailTreatment = new Label();
+            txtDetailTreatment = new TextBox();
+            lblDetailReports = new Label();
+            txtDetailReports = new TextBox();
+            lblDetailNextVisit = new Label();
+            txtDetailNextVisit = new TextBox();
+            btnRefresh = new Button();
+            btnBack = new Button();
+            button1 = new Button();
+            pnlPatientInfo.SuspendLayout();
+            grpVisits.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvVisits).BeginInit();
+            grpVisitDetails.SuspendLayout();
+            SuspendLayout();
+            // 
+            // pnlPatientInfo
+            // 
+            pnlPatientInfo.Controls.Add(button1);
+            pnlPatientInfo.Controls.Add(lblPatientTitle);
+            pnlPatientInfo.Controls.Add(lblName);
+            pnlPatientInfo.Controls.Add(txtName);
+            pnlPatientInfo.Controls.Add(lblNationalID);
+            pnlPatientInfo.Controls.Add(txtNationalID);
+            pnlPatientInfo.Controls.Add(lblDOB);
+            pnlPatientInfo.Controls.Add(txtDOB);
+            pnlPatientInfo.Controls.Add(lblAge);
+            pnlPatientInfo.Controls.Add(txtAge);
+            pnlPatientInfo.Controls.Add(lblGender);
+            pnlPatientInfo.Controls.Add(txtGender);
+            pnlPatientInfo.Controls.Add(lblGovernorate);
+            pnlPatientInfo.Controls.Add(txtGovernorate);
+            pnlPatientInfo.Controls.Add(lblPhone);
+            pnlPatientInfo.Controls.Add(txtPhone);
+            pnlPatientInfo.Location = new Point(20, 20);
+            pnlPatientInfo.Name = "pnlPatientInfo";
+            pnlPatientInfo.Size = new Size(960, 120);
+            pnlPatientInfo.TabIndex = 0;
+            // 
+            // lblPatientTitle
+            // 
+            lblPatientTitle.AutoSize = true;
+            lblPatientTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblPatientTitle.Location = new Point(10, 8);
+            lblPatientTitle.Name = "lblPatientTitle";
+            lblPatientTitle.Size = new Size(225, 25);
+            lblPatientTitle.TabIndex = 0;
+            lblPatientTitle.Text = "معلومات المريض الأساسية";
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Location = new Point(14, 45);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(34, 15);
+            lblName.TabIndex = 1;
+            lblName.Text = "الاسم";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(90, 42);
+            txtName.Name = "txtName";
+            txtName.ReadOnly = true;
+            txtName.Size = new Size(220, 23);
+            txtName.TabIndex = 2;
+            // 
+            // lblNationalID
+            // 
+            lblNationalID.AutoSize = true;
+            lblNationalID.Location = new Point(340, 45);
+            lblNationalID.Name = "lblNationalID";
+            lblNationalID.Size = new Size(70, 15);
+            lblNationalID.TabIndex = 3;
+            lblNationalID.Text = "الرقم القومي";
+            // 
+            // txtNationalID
+            // 
+            txtNationalID.Location = new Point(420, 42);
+            txtNationalID.Name = "txtNationalID";
+            txtNationalID.ReadOnly = true;
+            txtNationalID.Size = new Size(180, 23);
+            txtNationalID.TabIndex = 4;
+            // 
+            // lblDOB
+            // 
+            lblDOB.AutoSize = true;
+            lblDOB.Location = new Point(620, 45);
+            lblDOB.Name = "lblDOB";
+            lblDOB.Size = new Size(65, 15);
+            lblDOB.TabIndex = 5;
+            lblDOB.Text = "تاريخ الميلاد";
+            // 
+            // txtDOB
+            // 
+            txtDOB.Location = new Point(700, 42);
+            txtDOB.Name = "txtDOB";
+            txtDOB.ReadOnly = true;
+            txtDOB.Size = new Size(120, 23);
+            txtDOB.TabIndex = 6;
+            // 
+            // lblAge
+            // 
+            lblAge.AutoSize = true;
+            lblAge.Location = new Point(14, 78);
+            lblAge.Name = "lblAge";
+            lblAge.Size = new Size(32, 15);
+            lblAge.TabIndex = 7;
+            lblAge.Text = "السن";
+            // 
+            // txtAge
+            // 
+            txtAge.Location = new Point(90, 75);
+            txtAge.Name = "txtAge";
+            txtAge.ReadOnly = true;
+            txtAge.Size = new Size(80, 23);
+            txtAge.TabIndex = 8;
+            // 
+            // lblGender
+            // 
+            lblGender.AutoSize = true;
+            lblGender.Location = new Point(190, 78);
+            lblGender.Name = "lblGender";
+            lblGender.Size = new Size(39, 15);
+            lblGender.TabIndex = 9;
+            lblGender.Text = "الجنس";
+            // 
+            // txtGender
+            // 
+            txtGender.Location = new Point(240, 75);
+            txtGender.Name = "txtGender";
+            txtGender.ReadOnly = true;
+            txtGender.Size = new Size(70, 23);
+            txtGender.TabIndex = 10;
+            // 
+            // lblGovernorate
+            // 
+            lblGovernorate.AutoSize = true;
+            lblGovernorate.Location = new Point(340, 78);
+            lblGovernorate.Name = "lblGovernorate";
+            lblGovernorate.Size = new Size(53, 15);
+            lblGovernorate.TabIndex = 11;
+            lblGovernorate.Text = "المحافظة";
+            // 
+            // txtGovernorate
+            // 
+            txtGovernorate.Location = new Point(420, 75);
+            txtGovernorate.Name = "txtGovernorate";
+            txtGovernorate.ReadOnly = true;
+            txtGovernorate.Size = new Size(180, 23);
+            txtGovernorate.TabIndex = 12;
+            // 
+            // lblPhone
+            // 
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(620, 78);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(46, 15);
+            lblPhone.TabIndex = 13;
+            lblPhone.Text = "التليفون";
+            // 
+            // txtPhone
+            // 
+            txtPhone.Location = new Point(700, 75);
+            txtPhone.Name = "txtPhone";
+            txtPhone.ReadOnly = true;
+            txtPhone.Size = new Size(120, 23);
+            txtPhone.TabIndex = 14;
+            // 
+            // grpVisits
+            // 
+            grpVisits.Controls.Add(dgvVisits);
+            grpVisits.Font = new Font("Segoe UI", 10F);
+            grpVisits.Location = new Point(20, 150);
+            grpVisits.Name = "grpVisits";
+            grpVisits.Size = new Size(620, 420);
+            grpVisits.TabIndex = 1;
+            grpVisits.TabStop = false;
+            grpVisits.Text = "سجل الزيارات";
+            // 
+            // dgvVisits
+            // 
+            dgvVisits.AllowUserToAddRows = false;
+            dgvVisits.AllowUserToDeleteRows = false;
+            dgvVisits.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVisits.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvVisits.Columns.AddRange(new DataGridViewColumn[] { colVisitDate, colDoctor, colSpecialty, colShortDiagnosis });
+            dgvVisits.Location = new Point(10, 25);
+            dgvVisits.MultiSelect = false;
+            dgvVisits.Name = "dgvVisits";
+            dgvVisits.ReadOnly = true;
+            dgvVisits.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvVisits.Size = new Size(600, 380);
+            dgvVisits.TabIndex = 0;
+            // 
+            // colVisitDate
+            // 
+            colVisitDate.FillWeight = 30F;
+            colVisitDate.HeaderText = "تاريخ الزيارة";
+            colVisitDate.Name = "colVisitDate";
+            colVisitDate.ReadOnly = true;
+            // 
+            // colDoctor
+            // 
+            colDoctor.FillWeight = 30F;
+            colDoctor.HeaderText = "الدكتور";
+            colDoctor.Name = "colDoctor";
+            colDoctor.ReadOnly = true;
+            // 
+            // colSpecialty
+            // 
+            colSpecialty.FillWeight = 25F;
+            colSpecialty.HeaderText = "التخصص";
+            colSpecialty.Name = "colSpecialty";
+            colSpecialty.ReadOnly = true;
+            // 
+            // colShortDiagnosis
+            // 
+            colShortDiagnosis.FillWeight = 35F;
+            colShortDiagnosis.HeaderText = "ملخص التشخيص";
+            colShortDiagnosis.Name = "colShortDiagnosis";
+            colShortDiagnosis.ReadOnly = true;
+            // 
+            // grpVisitDetails
+            // 
+            grpVisitDetails.Controls.Add(lblDetailDiagnosis);
+            grpVisitDetails.Controls.Add(txtDetailDiagnosis);
+            grpVisitDetails.Controls.Add(lblDetailTreatment);
+            grpVisitDetails.Controls.Add(txtDetailTreatment);
+            grpVisitDetails.Controls.Add(lblDetailReports);
+            grpVisitDetails.Controls.Add(txtDetailReports);
+            grpVisitDetails.Controls.Add(lblDetailNextVisit);
+            grpVisitDetails.Controls.Add(txtDetailNextVisit);
+            grpVisitDetails.Font = new Font("Segoe UI", 10F);
+            grpVisitDetails.Location = new Point(660, 150);
+            grpVisitDetails.Name = "grpVisitDetails";
+            grpVisitDetails.Size = new Size(320, 420);
+            grpVisitDetails.TabIndex = 2;
+            grpVisitDetails.TabStop = false;
+            grpVisitDetails.Text = "تفاصيل الزيارة المحددة";
+            // 
+            // lblDetailDiagnosis
+            // 
+            lblDetailDiagnosis.AutoSize = true;
+            lblDetailDiagnosis.Location = new Point(11, 27);
+            lblDetailDiagnosis.Name = "lblDetailDiagnosis";
+            lblDetailDiagnosis.Size = new Size(67, 19);
+            lblDetailDiagnosis.TabIndex = 0;
+            lblDetailDiagnosis.Text = "التشخيص";
+            // 
+            // txtDetailDiagnosis
+            // 
+            txtDetailDiagnosis.Location = new Point(15, 50);
+            txtDetailDiagnosis.Multiline = true;
+            txtDetailDiagnosis.Name = "txtDetailDiagnosis";
+            txtDetailDiagnosis.ReadOnly = true;
+            txtDetailDiagnosis.ScrollBars = ScrollBars.Vertical;
+            txtDetailDiagnosis.Size = new Size(290, 90);
+            txtDetailDiagnosis.TabIndex = 1;
+            // 
+            // lblDetailTreatment
+            // 
+            lblDetailTreatment.AutoSize = true;
+            lblDetailTreatment.Location = new Point(14, 144);
+            lblDetailTreatment.Name = "lblDetailTreatment";
+            lblDetailTreatment.Size = new Size(43, 19);
+            lblDetailTreatment.TabIndex = 2;
+            lblDetailTreatment.Text = "العلاج";
+            // 
+            // txtDetailTreatment
+            // 
+            txtDetailTreatment.Location = new Point(15, 170);
+            txtDetailTreatment.Multiline = true;
+            txtDetailTreatment.Name = "txtDetailTreatment";
+            txtDetailTreatment.ReadOnly = true;
+            txtDetailTreatment.ScrollBars = ScrollBars.Vertical;
+            txtDetailTreatment.Size = new Size(290, 90);
+            txtDetailTreatment.TabIndex = 3;
+            // 
+            // lblDetailReports
+            // 
+            lblDetailReports.AutoSize = true;
+            lblDetailReports.Location = new Point(12, 269);
+            lblDetailReports.Name = "lblDetailReports";
+            lblDetailReports.Size = new Size(52, 19);
+            lblDetailReports.TabIndex = 4;
+            lblDetailReports.Text = "التقارير";
+            // 
+            // txtDetailReports
+            // 
+            txtDetailReports.Location = new Point(15, 294);
+            txtDetailReports.Multiline = true;
+            txtDetailReports.Name = "txtDetailReports";
+            txtDetailReports.ReadOnly = true;
+            txtDetailReports.ScrollBars = ScrollBars.Vertical;
+            txtDetailReports.Size = new Size(290, 60);
+            txtDetailReports.TabIndex = 5;
+            // 
+            // lblDetailNextVisit
+            // 
+            lblDetailNextVisit.AutoSize = true;
+            lblDetailNextVisit.Location = new Point(12, 366);
+            lblDetailNextVisit.Name = "lblDetailNextVisit";
+            lblDetailNextVisit.Size = new Size(80, 19);
+            lblDetailNextVisit.TabIndex = 6;
+            lblDetailNextVisit.Text = "موعد الزيارة";
+            // 
+            // txtDetailNextVisit
+            // 
+            txtDetailNextVisit.Location = new Point(94, 363);
+            txtDetailNextVisit.Name = "txtDetailNextVisit";
+            txtDetailNextVisit.ReadOnly = true;
+            txtDetailNextVisit.Size = new Size(120, 25);
+            txtDetailNextVisit.TabIndex = 7;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.FlatStyle = FlatStyle.Flat;
+            btnRefresh.Location = new Point(780, 585);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(120, 38);
+            btnRefresh.TabIndex = 3;
+            btnRefresh.Text = "تحديث البيانات";
+            btnRefresh.Click += btnRefresh_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Location = new Point(660, 585);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(100, 38);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "العودة";
+            btnBack.Click += btnBack_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(0, 192, 0);
+            button1.Location = new Point(852, 45);
+            button1.Name = "button1";
+            button1.Size = new Size(93, 39);
+            button1.TabIndex = 15;
+            button1.Text = "حجز موعد";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // Patient_Panel
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1000, 650);
+            Controls.Add(pnlPatientInfo);
+            Controls.Add(grpVisits);
+            Controls.Add(grpVisitDetails);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnBack);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Patient_Panel";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "الملف الطبي للمريض";
+            FormClosing += Patient_Panel_FormClosing;
+            Load += Patient_Panel_Load;
+            pnlPatientInfo.ResumeLayout(false);
+            pnlPatientInfo.PerformLayout();
+            grpVisits.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvVisits).EndInit();
+            grpVisitDetails.ResumeLayout(false);
+            grpVisitDetails.PerformLayout();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        // Controls declarations
+        private System.Windows.Forms.Panel pnlPatientInfo;
+        private System.Windows.Forms.Label lblPatientTitle;
+
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+
+        private System.Windows.Forms.Label lblNationalID;
+        private System.Windows.Forms.TextBox txtNationalID;
+
+        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.TextBox txtDOB;
+
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtAge;
+
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.TextBox txtGender;
+
+        private System.Windows.Forms.Label lblGovernorate;
+        private System.Windows.Forms.TextBox txtGovernorate;
+
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.TextBox txtPhone;
+
+        private System.Windows.Forms.GroupBox grpVisits;
+        private System.Windows.Forms.DataGridView dgvVisits;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colVisitDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDoctor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSpecialty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colShortDiagnosis;
+
+        private System.Windows.Forms.GroupBox grpVisitDetails;
+        private System.Windows.Forms.Label lblDetailDiagnosis;
+        private System.Windows.Forms.TextBox txtDetailDiagnosis;
+        private System.Windows.Forms.Label lblDetailTreatment;
+        private System.Windows.Forms.TextBox txtDetailTreatment;
+        private System.Windows.Forms.Label lblDetailReports;
+        private System.Windows.Forms.TextBox txtDetailReports;
+        private System.Windows.Forms.Label lblDetailNextVisit;
+        private System.Windows.Forms.TextBox txtDetailNextVisit;
+
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnBack;
+        private Button button1;
+    }
+}
