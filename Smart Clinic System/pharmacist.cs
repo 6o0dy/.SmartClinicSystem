@@ -18,24 +18,21 @@ namespace Smart_Clinic_System
 
         }
 
-        // 2. تحميل زيارات المريض في الجريد
         private void LoadPatientVisits()
         {
-            // استخراج كل الزيارات من كل الدكاترة اللي زارهم المريض ده
             var allVisits = currentPatient.patients.Doctors
                 .SelectMany(d => d.Visits.Select(v => new
                 {
                     التاريخ = v.Date,
                     الدكتور = d.FullName,
                     التخصص = d.Specialty,
-                    العلاج = v.Treatment // هنخفيه من الجريد ونظهره في التكست بوكس
+                    العلاج = v.Treatment
                 }))
                 .OrderByDescending(v => v.التاريخ)
                 .ToList();
 
             dgvVisits.DataSource = allVisits;
 
-            // إخفاء عمود العلاج من الجريد لأنه هيظهر في التكست بوكس تحت
             if (dgvVisits.Columns.Contains("العلاج"))
                 dgvVisits.Columns["العلاج"].Visible = false;
         }
@@ -61,7 +58,6 @@ namespace Smart_Clinic_System
             }
             else
             {
-                // مسح البيانات لو الرقم ناقص
                 dgvVisits.DataSource = null;
                 txtDetailTreatment.Clear();
             }
@@ -71,7 +67,6 @@ namespace Smart_Clinic_System
         {
             if (dgvVisits.SelectedRows.Count > 0)
             {
-                // سحب قيمة العلاج من الصف المحدد
                 var selectedRow = dgvVisits.SelectedRows[0];
                 txtDetailTreatment.Text = selectedRow.Cells["العلاج"].Value?.ToString();
             }
