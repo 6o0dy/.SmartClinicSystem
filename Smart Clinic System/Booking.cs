@@ -73,13 +73,10 @@ namespace Smart_Clinic_System
 
         private void dgvDoctor_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // التأكد إن الصف حقيقي
+            if (e.RowIndex >= 0) 
             {
-                // الوصول للصف الحالي
                 DataGridViewRow row = dgvDoctor.Rows[e.RowIndex];
 
-                // وضع القيم في الـ TextBoxes
-                // "الاسم" و "الموبايل" هي الأسماء اللي استخدمناها في الـ DataSource
                 DoctorName.Text = row.Cells["الاسم"].Value.ToString();
                 Specialization.Text = row.Cells["التخصص"].Value.ToString();
                 ClinicNumber.Text = row.Cells["اسم_العيادة"].Value.ToString();
@@ -91,14 +88,12 @@ namespace Smart_Clinic_System
         {
             try
             {
-                // إنشاء كائن الحجز (البيانات بتتورث من parson)
                 Appointment newApp = new Appointment
                 {
-                    NationalID = txtNationalID.Text, // ستلقي Exception لو مش 14 رقم (بسبب التوريث)
+                    NationalID = txtNationalID.Text,
                     FullName = txtName.Text,
                     PhoneNumber = txtPhone.Text,
 
-                    // بيانات الدكتور من الجريد
                     DoctorID = dgvDoctor.CurrentRow.Cells["الرقم_القومي"].Value.ToString(),
                     DoctorName = DoctorName.Text,
                     Specialty = Specialization.Text,
@@ -114,7 +109,7 @@ namespace Smart_Clinic_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message); // هيظهر أخطاء الـ Validation اللي في كلاس parson
+                MessageBox.Show(ex.Message); 
             }
         }
 
